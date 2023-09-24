@@ -253,6 +253,7 @@ if __name__ == "__main__":
         optimizer = torch.optim.Adam(model.parameters(), lr=args.lr)
 
         max_acc = 0
+        best_accs = [0, 0, 0, 0]
         for epoch in range(1, args.epochs):
             lam, train_loss, train_accs = pass_data(train_loader, ranges, to_train=True)
             _, val_loss, val_accs = pass_data(val_loader, ranges, lam=lam)
