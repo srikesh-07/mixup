@@ -209,7 +209,7 @@ if __name__ == "__main__":
             K = [0, 333, 666, 1000]
         elif args.dataset == "DD":
             K = [0, 393, 785, 1178]
-        elif args.dataset == "FRANK":
+        elif args.dataset == "FRANKENSTEIN":
             K = [0, 1445, 2890, 4337]
 
         nodes = torch.zeros(len(dataset))
