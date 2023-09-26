@@ -159,7 +159,7 @@ def pass_data(loader, ranges, lam=None, to_train=False):
         if to_train:
             loss, lam = train(data)
             losses.append(loss)
-        acc = test(data, lam, ranges)
+        acc = test(data, 1, ranges)
         accs.append(acc[0][0])
         n_samples += acc[0][1]
         head_accs.append(acc[1][0])
